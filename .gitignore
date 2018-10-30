@@ -1,1 +1,6 @@
 .vs/
+takint.resume.pages/bin/
+*.PublishSettings
+takint.resume.pages/obj/
+takint.resume.pages/wwwroot/lib/
+takint.resume.pages/Properties/

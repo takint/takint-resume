@@ -1,0 +1,18 @@
+﻿.nav-pos-content {
+    position: fixed;
+    top: 56px;
+    z-index: 999;
+}
+
+    .nav-pos-content a {
+        color:white;
+    }
+
+.bg-opacity-8 {
+    opacity: .85;
+}
+
+.read-more-link {
+    text-decoration: none;
+    font-size: medium;
+}
