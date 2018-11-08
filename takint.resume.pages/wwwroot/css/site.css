@@ -17,6 +17,10 @@
     font-size: medium;
 }
 
+.footer {
+    color:white;
+}
+
 /*=============POST==============*/
 #preHeadline {
     font-weight: bold;

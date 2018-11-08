@@ -26,6 +26,11 @@ namespace takint.resume.pages.Controllers
             return View();
         }
 
+        public IActionResult PostList()
+        {
+            return View();
+        }
+
         public IActionResult Post(int postId)
         {
             return View();

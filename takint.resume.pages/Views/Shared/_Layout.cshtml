@@ -77,7 +77,57 @@
     </main>
     <footer class="footer bg-primary">
         <div class="container">
-            <div class="row"><span style="color:white;">&copy; @DateTime.Now.Year - Jim's Home</span></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Greeting</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Greeting</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Greeting</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    Social media
+                    <ul>
+                        <li><a><i class="fa fa-2x fa-facebook-square"></i></a></li>
+                        <li><a><i class="fa fa-2x fa-twitter-square"></i></a></li>
+                        <li><a><i class="fa fa-2x fa-youtube-square"></i></a></li>
+                        <li><a><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                        <li><a><i class="fa fa-2x fa-comment"></i></a></li>
+                        <li><a><i class="fa fa-2x fa-envelope-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <ul>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Notes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Favorite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Computer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <span>&copy; @DateTime.Now.Year - Jim's Home</span>
+                </div>
+            </div>
         </div>
     </footer>
 
@@ -102,6 +152,16 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
+    @*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19911261-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-19911261-6');
+        </script>*@
+
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>
