@@ -21,6 +21,13 @@
     color:white;
 }
 
+.card-img-top {
+    height: 225px;
+    width: 100%;
+    display: block;
+}
+
+
 /*=============POST==============*/
 #preHeadline {
     font-weight: bold;

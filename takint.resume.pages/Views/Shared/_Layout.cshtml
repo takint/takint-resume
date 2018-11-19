@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model SharedViewModel;
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -66,7 +67,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="~/images/banner1.png" alt="First slide">
+                <img class="d-block w-100" src="@Model.BannerImageUrl" alt="First slide">
             </div>
         </div>
     </div>

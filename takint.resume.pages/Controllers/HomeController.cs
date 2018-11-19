@@ -1,14 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ff.words.application.Interfaces;
+using ff.words.application.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using takint.resume.pages.Models;
+using System.Linq;
 
 namespace takint.resume.pages.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        public IActionResult Index()
+        private readonly IEntryService _entryService;
+
+        public HomeController(IEntryService entryService)
         {
-            return View();
+            _entryService = entryService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            HomeViewModel vm = new HomeViewModel();
+            List<EntryViewModel> allEntries = (List<EntryViewModel>)await _entryService.GetAllAsync<EntryViewModel>();
+
+            vm.ListEntries = allEntries.OrderBy(e => e.CreatedDate).Skip(0).Take(9);
+
+            return View(vm);
         }
 
         [Route("About")]
