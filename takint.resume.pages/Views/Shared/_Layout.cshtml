@@ -12,11 +12,12 @@
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/css/bootstrap.min.css"
-              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        @*<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/4.1.1/css/bootstrap.min.css"
+        asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+        asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />*@
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" asp-append-version="true" />
-        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     </environment>
 </head>
 <body>
@@ -76,34 +77,44 @@
             @RenderBody()
         </div>
     </main>
-    <footer class="footer bg-primary">
+    <footer class="footer bg-dark">
         <div class="container">
-            <div class="row">
+            <div class="row footer-first-row">
                 <div class="col-md-4">
-                    <p>Greeting</p>
+                    <p>Hi, Jim here</p>
+                    <p>
+                        I likes to share my knowledge with other IT lovers and less tech-savvy people.
+                        The main purpose of this blog is to keep track of whatever I am thinking about or working on.
+                    </p>
                 </div>
                 <div class="col-md-4">
-                    <p>Greeting</p>
+                    <p>...one more thing</p>
+                    <p>
+                        I firmly believe that blogs are a two way conversation,
+                        so I welcome email and comments — as long as they’re on topic, more or less.
+                        Fell free to drop me an email to taki.lnt [at] gmail [dot] com.
+                    </p>
                 </div>
                 <div class="col-md-4">
-                    <p>Greeting</p>
+                    <h4>Favorite quotes</h4>
+                    <p>"No matter where we're going, <br>it starts from where we are."</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    Social media
+                <div class="col-md-4 social-footer-menu">
+                    <span>Social media</span>
                     <ul>
-                        <li><a><i class="fa fa-2x fa-facebook-square"></i></a></li>
-                        <li><a><i class="fa fa-2x fa-twitter-square"></i></a></li>
-                        <li><a><i class="fa fa-2x fa-youtube-square"></i></a></li>
-                        <li><a><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-                        <li><a><i class="fa fa-2x fa-comment"></i></a></li>
-                        <li><a><i class="fa fa-2x fa-envelope-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-2x fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-2x fa-youtube-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-2x fa-comment"></i></a></li>
+                        <li><a href="#"><i class="fa fa-2x fa-envelope-square"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8 footer-menu">
                     <ul>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -138,7 +149,7 @@
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+        @*<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
                 asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
                 asp-fallback-test="window.jQuery"
                 crossorigin="anonymous"
@@ -149,8 +160,10 @@
                 asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
                 crossorigin="anonymous"
                 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
-        </script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        </script>*@
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
 
     @*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19911261-6"></script>
